@@ -1,0 +1,45 @@
+@import './variables.scss';
+
+#add-student {
+    margin-top: 20px;
+
+    form {
+        margin-bottom: 20px;
+
+        label {
+            font-weight: normal;
+            margin-top: 20px;
+            font-family: "SemiBold", sans-serif;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        input {
+            width: 100%;
+            line-height: 2.8px;
+            padding: 10px;
+            background: $secondColor;
+            color: #777777;
+            border: 1px solid $secondColor;
+            border-radius: 10px;
+            outline: none;
+            transition: all 0.3s ease-in-out;
+
+            &:focus {
+                background: $lightColor;
+                border-color: $mainColor;
+            }
+
+            &::placeholder {
+                font-family: "Regular", sans-serif;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .submit {
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+}

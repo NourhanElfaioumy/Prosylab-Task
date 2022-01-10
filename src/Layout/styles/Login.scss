@@ -1,0 +1,59 @@
+@import "./variables.scss";
+
+#page-content {
+    margin: 20px 10px;
+
+    .boxes {
+        box-shadow: 0 0 6px $bgColor;
+
+        h1 {
+            font-size: 20px;
+            font-weight: normal;
+            font-family: "SemiBold", sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            label {
+                font-weight: normal;
+                font-family: "SemiBold", sans-serif;
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+
+            input {
+                width: 100%;
+                line-height: 2.8px;
+                margin: 0 0 25px 0;
+                padding: 10px;
+                background: $secondColor;
+                color: #777777;
+                border: 1px solid $secondColor;
+                border-radius: 10px;
+                outline: none;
+                transition: all 0.3s ease-in-out;
+
+                &:focus {
+                    background: $lightColor;
+                    border-color: $mainColor;
+                }
+
+                &::placeholder {
+                    font-family: "Regular", sans-serif;
+                }
+            }
+        }
+
+        .submit {
+            padding: 10px 20px;
+            margin-left: 45%;
+            font-size: 14px;
+        }
+    }
+}
